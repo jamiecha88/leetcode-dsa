@@ -37,6 +37,34 @@ n == player1.length == player2.length
 0 <= player1[i], player2[i] <= 10
 */
 
-let isWinner = function(player1, player2) {
-
+let isWinner1 = function(player1, player2) {
+    //question: why is sliding window necessary here anyway if we need to know if there is a 10 in array in every turn?
 };
+
+
+
+//-----------------------------------------
+var isWinner2 = function(player1, player2) {
+    //check array lengths (cannot be empty)
+    //check if any items are between 0-10
+
+    //let game = array length (determine number of turns)
+    //use for loop to check each element if 10...
+        //use if/else statement (if i >= 10, then double every number AFTER)...do something like this? -> 2*arr[i]
+    //add everything together from above calculation...
+    //how do I run this with two arrays? (using i, j and another variable?)
+    //return winner
+};
+
+//xi
+//"x subscript i"
+//"i is the specific turn # in game; So x1 would be turn number 1"
+
+//2xi
+//After the first strike (all pins are knocked down), then multiply every value after that turn by 2
+
+//sum of turns for each player is calculated.
+//player with highest num is slidthe winner
+//returns 1, 2, or 0 (tie)
+
+//constraints: both players' arrays must be same length, array cannot be empty or over 1000 turns, valid point values are 0-10 (inclusive)
